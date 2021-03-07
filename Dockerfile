@@ -42,3 +42,4 @@ ENV         LC_ALL=ja_JP.UTF-8
 ENV         TZ="Asia/Tokyo"
 #終了処理
 RUN         apt clean && rm -rf /var/lib/apt/lists/*
+

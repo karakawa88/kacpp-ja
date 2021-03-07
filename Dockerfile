@@ -9,7 +9,7 @@ ENV         DEBIAN_FORONTEND=noninteractive
 RUN         apt update \
                 && apt install -y locales tzdata
 # 日本語に関連するコマンドをインストール
-RUN         apt install -y gawk nkf
+RUN         apt install -y nkf less
 # debianはja_JP.UTF-8ロケールが無いので作成する。
 RUN         echo "ja_JP.UTF-8 UTF-8" >>/etc/locale.gen \
             && locale-gen \

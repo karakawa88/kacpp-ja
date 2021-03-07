@@ -6,6 +6,12 @@ Debian Dockerイメージは日本語の設定がされていない。
 そのため必要なパッケージをインストールローケルを作成し日本語の設定を行った。
 Dokerイメージ名はkagalpandh/kacpp-jaである。
 
+## 使い方
+```shell
+docker image pull kagalpandh/kacpp-ja
+docker run -dit --name kacpp-ja kagalpandh/kacpp-ja
+```
+
 ## 説明
 debianイメージは日本語の設定がされていない。
 そもそもロケールのja_JP.UTF-8すらない。

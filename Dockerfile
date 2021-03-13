@@ -23,7 +23,7 @@ RUN         ln -f -s /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 # ここでは/etc/rc.dにprofile, bashrcに相当するファイルがそれぞれ
 # rcprofile, rcsrcがありそれを読み込む設定にする。
 RUN         mkdir /etc/rc.d
-COPY        rc.d/* /etc/rc.d
+COPY        rc.d/ /etc/rc.d
 COPY        profile /etc
 COPY        bash.bashrc /etc
 # ユーザー毎の全コマンドに設定する.bashrcにもロケールを設定

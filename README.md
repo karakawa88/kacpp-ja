@@ -4,7 +4,7 @@
 Debian Dockerイメージは日本語の設定がされていない。
 そもそもja_JP.UTF-8のロケールすらない。またタイムゾーンのAsia/Tokyoもない。
 そのため必要なパッケージをインストールローケルを作成し日本語の設定を行った。
-Dokerイメージ名はkagalpandh/kacpp-jaである。
+Dockerイメージ名はkagalpandh/kacpp-jaである。
 
 ## 使い方
 ```shell
@@ -52,7 +52,10 @@ bashの環境変数と毎回起動して読み込むファイルbashrcの配置�
 profileに相当するのがrcprofileでbashrcに対応するのがrcsrcに変更。
 /etc/profileと/etc/bashrc.bashrcそれぞれこれらファイルを読み込むように設定。
 
-# その他
+## ベースイメージ
+debian:buster-slim
+
+## その他
 DockerHub: [kagalpandh/kacpp-ja](https://hub.docker.com/repository/docker/kagalpandh/kacpp-gccdev)<br />
 GitHub: [karakawa88/kacpp-ja](https://github.com/karakawa88/kacpp-ja)
 

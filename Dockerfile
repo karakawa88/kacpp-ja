@@ -1,7 +1,8 @@
 # debianのdockerイメージには日本語設定がされていない
 # debianのシェル内で日本語入力できないなどの不便なので
 # 日本語設定を行ったイメージを作成する
-FROM        debian
+# FROM        debian
+FROM        debian:buster-slim
 SHELL       [ "/bin/bash", "-c" ]
 WORKDIR     /root
 ENV         DEBIAN_FORONTEND=noninteractive

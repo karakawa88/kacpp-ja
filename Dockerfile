@@ -41,8 +41,6 @@ RUN         apt update && \
             echo "export TZ=Asia/Tokyo" >>.bashrc && \
             echo "export LANG=ja_JP.UTF-8" >>.bashrc && \
             cp .bashrc /etc/skel && \
-            # 便利なコマンドをあらかじめ入れておく
-            apt install -y binutils && \
             #終了処理
             apt clean && rm -rf /var/lib/apt/lists/*
 ENTRYPOINT  ["/bin/bash"]

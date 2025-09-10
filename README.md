@@ -53,7 +53,7 @@ profileに相当するのがrcprofileでbashrcに対応するのがrcsrcに変�
 /etc/profileと/etc/bashrc.bashrcそれぞれこれらファイルを読み込むように設定。
 
 ## ベースイメージ
-debian:bullseye-slim
+debian:bookworm-slim
 
 ## その他
 DockerHub: [kagalpandh/kacpp-ja](https://hub.docker.com/repository/docker/kagalpandh/kacpp-ja)<br />

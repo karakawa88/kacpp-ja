@@ -19,7 +19,7 @@ debianイメージは日本語の設定がされていない。
 タイムゾーンもAsia/Tokyoがないためタイムゾーン情報をインストールし設定。
 その他日本語に関連するパッケージnkfとlessをインストール。
 
-###日本語のロケールの設定
+### 日本語のロケールの設定
 ```shell
 apt install -y locales
 echo "ja_JP.UTF-8 UTF-8" >>/etc/locale.gen
@@ -46,7 +46,7 @@ export TZ="Asia/Tokyo"
 ```
 これもENVでイメジに焼き付けている。
 
-##構成
+## 構成
 bashの環境変数と毎回起動して読み込むファイルbashrcの配置。
 /etc/profileを読み込むようになっているがここでは/etc/rc.dの
 profileに相当するのがrcprofileでbashrcに対応するのがrcsrcに変更。

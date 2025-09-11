@@ -4,12 +4,12 @@
 Debian Dockerイメージは日本語の設定がされていない。
 そもそもja_JP.UTF-8のロケールすらない。またタイムゾーンのAsia/Tokyoもない。
 そのため必要なパッケージをインストールローケルを作成し日本語の設定を行った。
-Dockerイメージ名はkagalpandh/kacpp-jaである。
+Dockerイメージ名はkagalpandh/kacpp-ja:debian-bullseye-slimである。
 
 ## 使い方
 ```shell
-docker image pull kagalpandh/kacpp-ja
-docker run -dit --name kacpp-ja kagalpandh/kacpp-ja
+docker image pull kagalpandh/kacpp-ja:debian-bullseye-slim
+docker run -dit --name kacpp-ja kagalpandh/kacpp-ja:debian-bullseye-slim
 ```
 
 ## 説明
@@ -44,7 +44,7 @@ apt install -y tzdata
 ln -f -s /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 export TZ="Asia/Tokyo"
 ```
-これもENVでイメジに焼き付けている。
+これもENVでイメ___ージに焼き付けている。
 
 ##構成
 bashの環境変数と毎回起動して読み込むファイルbashrcの配置。
@@ -56,6 +56,7 @@ profileに相当するのがrcprofileでbashrcに対応するのがrcsrcに変�
 debian:bullseye-slim
 
 ## その他
-DockerHub: [kagalpandh/kacpp-ja](https://hub.docker.com/repository/docker/kagalpandh/kacpp-ja)<br />
+DockerHub:
+[kagalpandh/kacpp-ja](https://hub.docker.com/repository/docker/kagalpandh/kacpp-ja:debian-bullseye-slim)<br />
 GitHub: [karakawa88/kacpp-ja](https://github.com/karakawa88/kacpp-ja)
 

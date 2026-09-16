@@ -2,7 +2,7 @@
 # debianのシェル内で日本語入力できないなどの不便なので
 # 日本語設定を行ったイメージを作成する
 # FROM        debian
-FROM        debian:bullseye-slim
+FROM        debian:bookworm-slim
 SHELL       [ "/bin/bash", "-c" ]
 WORKDIR     /root
 ENV         DEBIAN_FORONTEND=noninteractive
